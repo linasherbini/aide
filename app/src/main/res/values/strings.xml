@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Driver Aid</string>
+    <string name="lets_get_started">Let\'s get started</string>
+    <string name="signup_as">Signup as:</string>
+
+    <string-array name="user_type">
+        <item>Driver</item>
+        <item>Employee</item>
+        <item>Repair shop</item>
+    </string-array>
+    <string-array name="service_types">
+        <item>Car repair Help</item>
+        <item>Car Pickup service</item>
+    </string-array>
+    <string-array name="tonesTitle">
+        <item>Cool-alarm</item>
+        <item>Eerie-clock</item>
+        <item>Gentle-wake</item>
+        <item>Old Clock Chimes</item>
+        <item>Short-ringtone</item>
+
+    </string-array>
+    <string-array name="tones">
+        <item>cool_alarm.mp3</item>
+        <item>eerie_clock.mp3</item>
+        <item>gentle_wake.mp3</item>
+        <item>old_clock_chimes.mp3</item>
+        <item>short_ringtone.mp3</item>
+
+    </string-array>
+
+    <string-array name="roadDurationTitle">
+        <item>1 hour</item>
+        <item>2 hour</item>
+        <item>3 hour</item>
+        <item>4 hour</item>
+        <item>5 hour</item>
+    </string-array>
+
+    <string-array name="roadDuration">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="alarmRepetitionTitle">
+        <item>5 minutes</item>
+        <item>15 minutes</item>
+        <item>25 minutes</item>
+    </string-array>
+
+    <string-array name="alarmRepetition">
+        <item>5</item>
+        <item>15</item>
+        <item>25</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="driver_name">Name: %1$s</string>
+    <string name="car_type_and_issue">Summary: %1$s (%2$s)</string>
+    <string name="cartype">Car Type : %1$s</string>
+    <string name="car_issue">Car Issue : %1$s</string>
+    <string name="phone_number">Phone number : %1$s</string>
+    <string name="location">Location</string>
+    <string name="current_orders_title">Current Requests:</string>
+    <string name="new_order_title">New Requests:</string>
+    <string name="technician_name">technician name</string>
+    <string name="technician_number">technician mobile number</string>
+    <string name="cost">Cost</string>
+    <string name="maintainance_cost">%1$s</string>
+    <string name="status">Status: %1$s</string>
+    <string name="job_status">Job status: %1$s</string>
+    <string name="total">Total: %1$s</string>
+    <string name="approve_finish">Finish Job</string>
+    <string name="your_order_accepted_by">Your Request has been accepted by %1$s</string>
+    <string name="your_order_finished">Your Request has been fulfilled by %1$s</string>
+    <string name="order_date">Date: %1$s</string>
+    <string name="technician_name_placeholder">Technician name: %1$s</string>
+    <string name="technician_number_placeholder">Technician number: %1$s</string>
+    <string name="on_the_way">Status: On the way</string>
+    <string name="finished">Status: Finished</string>
+    <string name="statusConfirmedMessage">Welcome :D \n You can help our drivers by chatting through JivoChat \n Email:Sulafa.haneef@gmail.com \n Password:Ss123123</string>
+    <string name="statusUnConfirmedMessage">Welcome :D \n You are yet to be confirmed in our system.</string>
+</resources>

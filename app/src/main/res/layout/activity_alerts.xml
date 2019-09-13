@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context="com.driver.aid.alarts.AlertsActivity">
+
+    <ImageView
+        android:id="@+id/AideLogo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        android:layout_margin="20dp"
+        android:tint="@color/colorAccent"
+        android:src="@drawable/aide" />
+
+    <TextView
+        android:id="@+id/ActivateAlerts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Activate Alerts"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <Switch
+        android:id="@+id/antiDrowseAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Anti-Drowsiness Alert" />
+
+    <Switch
+        android:id="@+id/speedAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Speed Alert" />
+
+
+    <FrameLayout
+        android:id="@+id/confirmLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please confirm your location"
+            android:layout_margin="10dp"/>
+
+        <fragment
+            android:id="@+id/mapFragment"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="45dp" />
+
+        <Button
+            android:id="@+id/confirmLoc"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:text="Confirm" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

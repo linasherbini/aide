@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "913034035409",
+    "firebase_url": "https://driveraid-37226.firebaseio.com",
+    "project_id": "driveraid-37226",
+    "storage_bucket": "driveraid-37226.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913034035409:android:4211dcfa4d6ffc80",
+        "android_client_info": {
+          "package_name": "com.driver.aid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "913034035409-co3i22m148pm81tnk4vsbudrg97mjvpm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.driver.aid",
+            "certificate_hash": "9e4c2e216e6637c97ed9bf5ec0a65f9e8ebf2013"
+          }
+        },
+        {
+          "client_id": "913034035409-ivoomiruh53ibrv1472hdu6q55c51qo0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu0r8StsaW7nNg-v2EQWexFVXZ-U7q9zM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "913034035409-ivoomiruh53ibrv1472hdu6q55c51qo0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

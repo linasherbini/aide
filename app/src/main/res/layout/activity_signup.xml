@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:context="com.driver.aid.signup.SignupActivity">
+
+        <ImageView
+            android:id="@+id/AideLogo"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:layout_marginTop="60dp"
+            android:tint="@color/colorAccent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/aide" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="@string/lets_get_started" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="10sp"
+            android:text="@string/signup_as" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:layout_marginTop="5dp"
+            android:id="@+id/userTypeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/user_type">
+
+        </android.support.v7.widget.AppCompatSpinner>
+
+        <LinearLayout
+            android:id="@+id/employeeContainer"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/empFullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <EditText
+                android:id="@+id/empPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:ems="10"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <EditText
+                android:id="@+id/empEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <EditText
+                android:id="@+id/empPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <EditText
+                android:id="@+id/empDegree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Degree"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <EditText
+                android:id="@+id/empSkills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Skills"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <EditText
+                android:id="@+id/empExp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Experiences"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/repairShopContainer"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/rsName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Shop Name"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <EditText
+                android:id="@+id/rsPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <EditText
+                android:id="@+id/rsEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Personal Email"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+
+            <EditText
+                android:id="@+id/rsPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <EditText
+                android:id="@+id/rsBranch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Branch"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/driverContainer"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/driverFullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="@android:integer/config_mediumAnimTime"
+                android:ems="10"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <EditText
+                android:id="@+id/driverPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <EditText
+                android:id="@+id/driverEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <EditText
+                android:id="@+id/driverPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <EditText
+                android:id="@+id/driverNationalID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="ID"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <EditText
+                android:id="@+id/driverCarType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Car Type"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+            <EditText
+                android:id="@+id/driverPlateNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Plate Number"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/createAccount"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Create Account" />
+
+    </LinearLayout>
+</ScrollView>

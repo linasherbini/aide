@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context="com.driver.aid.LoginActivity">
+
+    <ImageView
+        android:id="@+id/AideLogo"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        android:layout_margin="20dp"
+        android:tint="@color/colorAccent"
+        android:src="@drawable/aide" />
+
+    <TextView
+        android:id="@+id/welcomeBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Welcome Back"
+        android:layout_margin="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        tools:text="mohamed+shop@gmail.com"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        tools:text="00000000"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/LoginB"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:text="Sign in" />
+
+    <TextView
+        android:id="@+id/resetPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:text="Forgot Password?"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textStyle="bold" />
+
+
+</android.support.v7.widget.LinearLayoutCompat>

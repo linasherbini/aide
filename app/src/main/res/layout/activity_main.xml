@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context="com.driver.aid.SplashActivity">
+
+
+    <ImageView
+        android:id="@+id/AideLogo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="fitCenter"
+        android:tint="@color/colorAccent"
+        android:src="@drawable/aide" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:lineSpacingExtra="12sp"
+        android:text="Her Driving Companion"
+        android:textAppearance="@android:style/TextAppearance.Widget.TextView"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        app:fontFamily="sans-serif" />
+
+    <Button
+        android:id="@+id/signUp"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="signUp"
+        android:text="Sign Up"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <TextView
+        android:id="@+id/signIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:onClick="login"
+        android:gravity="center"
+        android:text="Already have an account? Sign in"
+        android:visibility="visible"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/choiceT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="How would like to sign up to our application?"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+
+    <LinearLayout
+        android:id="@+id/choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+    <Button
+        android:id="@+id/driverButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|left"
+        android:visibility="visible"
+        android:text="Driver" />
+
+    <Button
+        android:id="@+id/empButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_gravity="center_horizontal|right"
+        android:text="Employee" />
+
+    <Button
+        android:id="@+id/rsButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="10dp"
+        android:text="Repair Shop" />
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.LinearLayoutCompat>
